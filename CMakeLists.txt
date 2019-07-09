@@ -48,6 +48,9 @@ INSTALL(TARGETS hiredis
 INSTALL(FILES hiredis.h read.h sds.h async.h
     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/hiredis)
 
+INSTALL(FILES adapters/libev.h
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/hiredis/adapters)
+
 INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/hiredis.pc
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
 
